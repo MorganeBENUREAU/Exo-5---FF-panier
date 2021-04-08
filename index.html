@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Les 2 lignes sont mon lien pour les fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Panier - Figurines Final Fantasy</title>
+</head>
+
+<body>
+    <div id="container">
+        <header class="header">
+            <h1 class="logo">oFig
+                <span class="logo-second">Figurines et statuettes</span>
+            </h1>
+            <h2 class="header-bis">Votre panier <em class="header-bis-second">2 produits</em></h2>
+        </header>
+
+        <main class="main">
+            <section class="panier">
+                <h3 class="panier-title">Votre panier</h3>
+                <table class="tableau">
+                    <thead>
+                        <tr>
+                            <th>Figurine</th>
+                            <th>Prix unitaire</th>
+                            <th>Quantité</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cloud Strife</td>
+                            <td>59 €</td>
+                            <td><span>1</span><span>supprimer</span></td>
+                        </tr>
+                        <tr>
+                            <td>Tifa Lockhart</td>
+                            <td>69 €</td>
+                            <td><span>1</span><span>supprimer</span></td>
+                        </tr>
+                        <tr>
+                            <td>Barret Wallace</td>
+                            <td>69 €</td>
+                            <td><span>1</span><span>supprimer</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Total de la commande : </td>
+                            <td class="price">197€</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section class="preference">
+                <h3>Préférences de livraison</h3>
+                <form id="form" action="">
+                    <div class="left">
+                        <fieldset>
+                            <div>
+                                <h4>Où souhaitez vous être livrée ?</h4>
+                            </div>
+                            <div class="input-group">
+                                <input type="radio" id="adresse-courante" name="adresse">
+                                <label for="adresse--courante">Mon adresse courante</label>
+                                <input type="radio" id="autre-adresse" name="adresse" checked>
+                                <label for="autre--adresse">Autre adresse</label>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <div>
+                                <h4>Options</h4>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="suivi-livraison" name="options" checked>
+                                <label for="suivi-livraison">Suivi de livraison par sms (inclus)</label>
+                                <input type="checkbox" id="satisfait-livraison" name="options">
+                                <label for="Satisfait-livraison">Satisfait ou remboursé (+2 euros)</label>
+                                <input type="checkbox" id="garantie-livraison" name="options">
+                                <label for="garantie-livraison">Garantie 2 ans (+10 euros)</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="right">
+                        <fieldset class="adresse">
+                            <div>
+                                <h4>Adresse</h4>
+                            </div>
+                            <div class="top">
+                                <label for="adress-rue">Rue</label>
+                                <input type="text" id="adresse-rue" name="rue">
+
+                                <label for="adress-code-postal">Code postal</label>
+                                <input type="text" id="adresse-code-postal" name="codepostal">
+
+                                <label for="adress-ville">Ville</label>
+                                <input type="text" id="adresse-ville" name="ville">
+                            </div>
+                            <div>
+                                <h4>Informations complémentaires</h4>
+                            </div>
+                            <div class="bottom">
+                                <label for="info-comp">interphone, bâtiment, etc.</label>
+                                <textarea name="infocomp" id="info-comp" cols="30" rows="2"></textarea>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+
+            <section class="montant">
+                <p class="montant-total">Montant total à régler :</p>
+                <p class="montant-total-prix">197€</p>
+
+            </section>
+            <section class="validation">
+                <button class="continu">Continuer vos achats</button>
+                <button class="valider">Valider et payer</button>
+            </section>
+
+        </main>
+
+        <aside>
+            <p>soldes</p>
+        </aside>
+
+        <footer>
+            <p>oFig - toutes les images sont sous copyright SquareEnix</p>
+        </footer>
+    </div>
+</body>
+
+</html>

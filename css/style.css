@@ -1,0 +1,261 @@
+body {
+    font-family: "raleway", sans-serif;
+}
+
+#container {
+    width: 850px;
+    margin: 0 auto;
+    /* Pour les test de position: background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #c80000;
+    justify-content: flex-start;
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.logo-second {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.header-bis {
+    background-color: #666;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.header-bis-second {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.panier-title {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 30px 0;
+}
+
+.tableau {
+    box-shadow: 0px 2px 4px lightgrey;
+    width: 100%;
+    margin: 0 20px;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+thead {
+    font-weight: bold;
+    font-size: 1.6em;
+    border-bottom: 2px solid #666;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+td {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+td span:first-child {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 0 30px 0 8px; 
+    margin-right: 8px;
+}
+
+td span:last-child{
+    color: #c80000;
+    text-decoration: underline;
+    font-size: 0.7em;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+tfoot td:last-child {
+    color: #c80000;
+    font-size: 1.9em;
+}
+
+section h3 {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 30px 0;
+    border-top: 1px solid lightgrey;
+}
+
+h4 {
+    color: #666;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+#form {
+    display: flex;
+}
+
+.right {
+    width: 50%;
+}
+
+.input-group {
+    width: 200px;
+}
+
+.checkbox-group {
+    width: 290px;
+} 
+
+.left {
+    width: 50%;
+}
+
+.input-group input {
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+/* marche pas.input-group input:checked {
+    color: blue;
+} */
+
+.checkbox-group input {
+    margin-bottom: 10px;
+    color: lightgray;
+    /* marche pas 
+    border-radius: 40px; */
+}
+
+/* marche pas .checkbox-group input:checked {
+    background-color: blue;
+} */
+
+.top, .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.top input {
+    background-color: rgba(211, 211, 211, 0.2);
+    border-style: none;
+    border-bottom: 1px solid lightgray; 
+    height: 40px;
+}
+
+.top label {
+    padding: 15px 0;
+}
+
+.bottom label {
+    padding-bottom: 15px 0;
+}
+
+.bottom textarea {
+    background-color: rgba(211, 211, 211, 0.2);
+    border-style: none;
+    border-bottom: 1px solid lightgray; 
+    margin-bottom: 40px;
+}
+
+.preference {
+    border-bottom: 1px solid lightgray;
+} 
+
+.montant {
+    box-shadow: 0px 2px 4px lightgrey ;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 40px;
+    margin: 20px 0;
+}
+
+.montant-total {
+    font-weight: bold;
+    font-size: 1.6em;
+    width: 100%;
+}
+
+.montant-total-prix {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #c80000;
+}
+
+.validation {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.continu {
+    background-color: lightgray;
+    border: none;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.valider {
+    background-color: #c80000;
+    color: white;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    border: none;
+}
+
+footer {
+    background-color: #666;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    /* position: fixed;
+    bottom: 0; */
+    /* commenté le haut sinon on voit pas tout */
+    width: 850px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+
+aside {
+    text-transform: uppercase;
+    position: fixed;
+    top: calc((100% - 100px)/2);
+    /* left: 0; */
+    padding: 15px 5px;
+    word-break: break-all;
+    background-color: #c80000;
+    width: 25px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 1.2em;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
